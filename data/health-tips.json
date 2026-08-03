@@ -1,0 +1,129 @@
+{
+  "categories": [
+    {
+      "id": "nutrition",
+      "name": "Nutrition",
+      "icon": "apple",
+      "color": "#10b981",
+      "tips": [
+        { "title": "Eat the Rainbow", "content": "Include fruits and vegetables of different colors in every meal. Each color provides unique vitamins and antioxidants your body needs.", "importance": "high" },
+        { "title": "Stay Hydrated", "content": "Aim for 8 glasses (2 liters) of water daily. Increase intake during exercise or hot weather. Your urine should be light yellow.", "importance": "high" },
+        { "title": "Limit Processed Foods", "content": "Reduce intake of ultra-processed foods high in sugar, salt, and unhealthy fats. Cook meals from whole ingredients when possible.", "importance": "high" },
+        { "title": "Healthy Fats Matter", "content": "Include sources of healthy fats like avocados, nuts, olive oil, and fatty fish (salmon, sardines). They support brain and heart health.", "importance": "medium" },
+        { "title": "Fiber is Essential", "content": "Eat 25-30g of fiber daily from whole grains, legumes, fruits, and vegetables. Fiber aids digestion and helps maintain healthy cholesterol.", "importance": "medium" },
+        { "title": "Mindful Eating", "content": "Eat slowly, chew thoroughly, and pay attention to hunger cues. This helps prevent overeating and improves digestion.", "importance": "medium" },
+        { "title": "Limit Added Sugar", "content": "The WHO recommends less than 25g (6 teaspoons) of added sugar daily. Check labels — sugar hides in sauces, bread, and drinks.", "importance": "high" },
+        { "title": "Protein at Every Meal", "content": "Include a source of protein (eggs, lean meat, beans, tofu, dairy) at each meal to support muscle repair and keep you feeling full.", "importance": "medium" }
+      ]
+    },
+    {
+      "id": "exercise",
+      "name": "Exercise & Fitness",
+      "icon": "activity",
+      "color": "#3b82f6",
+      "tips": [
+        { "title": "150 Minutes Per Week", "content": "Aim for at least 150 minutes of moderate aerobic activity (brisk walking, cycling) or 75 minutes of vigorous activity per week.", "importance": "high" },
+        { "title": "Strength Training", "content": "Include strength/resistance training at least 2 days per week. It builds muscle, strengthens bones, and boosts metabolism.", "importance": "high" },
+        { "title": "Move Every Hour", "content": "If you sit for long periods, stand up and move for at least 5 minutes every hour. Set a timer as a reminder.", "importance": "medium" },
+        { "title": "Warm Up & Cool Down", "content": "Always warm up for 5-10 minutes before exercise and cool down afterward. This prevents injuries and aids recovery.", "importance": "medium" },
+        { "title": "Find What You Enjoy", "content": "The best exercise is one you'll actually do consistently. Try different activities — dancing, swimming, hiking, yoga — until you find your fit.", "importance": "medium" },
+        { "title": "Stretch Daily", "content": "Spend 10-15 minutes daily on flexibility exercises. Focus on major muscle groups, holding each stretch for 15-30 seconds.", "importance": "low" }
+      ]
+    },
+    {
+      "id": "sleep",
+      "name": "Sleep & Recovery",
+      "icon": "moon",
+      "color": "#8b5cf6",
+      "tips": [
+        { "title": "7-9 Hours of Sleep", "content": "Adults need 7-9 hours of quality sleep per night. Consistent sleep deprivation increases risk of heart disease, diabetes, and obesity.", "importance": "high" },
+        { "title": "Consistent Sleep Schedule", "content": "Go to bed and wake up at the same time every day — even on weekends. This regulates your internal clock.", "importance": "high" },
+        { "title": "Digital Sunset", "content": "Stop using screens (phone, TV, computer) at least 1 hour before bedtime. Blue light suppresses melatonin production.", "importance": "high" },
+        { "title": "Cool, Dark, Quiet Room", "content": "Optimal sleep temperature is 60-67°F (15-19°C). Use blackout curtains and consider white noise or earplugs.", "importance": "medium" },
+        { "title": "No Caffeine After 2 PM", "content": "Caffeine has a half-life of 5-6 hours. Afternoon coffee can significantly disrupt your sleep quality.", "importance": "medium" },
+        { "title": "Bedtime Routine", "content": "Create a relaxing pre-sleep routine: reading, gentle stretching, meditation, or warm bath. Signal your body it's time to wind down.", "importance": "medium" }
+      ]
+    },
+    {
+      "id": "mental",
+      "name": "Mental Health",
+      "icon": "brain",
+      "color": "#ec4899",
+      "tips": [
+        { "title": "Practice Mindfulness", "content": "Spend 10 minutes daily in meditation or mindfulness. Apps like Headspace or Calm can guide beginners. It reduces stress and anxiety.", "importance": "high" },
+        { "title": "Stay Socially Connected", "content": "Maintain meaningful relationships. Loneliness is as harmful as smoking 15 cigarettes a day. Reach out to someone today.", "importance": "high" },
+        { "title": "Set Boundaries", "content": "Learn to say no. Overcommitting leads to burnout. Protect your time and energy for what matters most.", "importance": "medium" },
+        { "title": "Gratitude Practice", "content": "Write down 3 things you're grateful for each day. This simple practice rewires your brain for positivity and reduces stress hormones.", "importance": "medium" },
+        { "title": "Seek Help When Needed", "content": "There's no shame in talking to a therapist or counselor. Mental health is just as important as physical health.", "importance": "high" },
+        { "title": "Limit News Consumption", "content": "Constant news exposure increases anxiety. Set specific times to check news and avoid it before bedtime.", "importance": "medium" },
+        { "title": "Spend Time in Nature", "content": "Even 20 minutes in green spaces reduces cortisol (stress hormone) levels. Take a walk in a park or garden.", "importance": "medium" }
+      ]
+    },
+    {
+      "id": "preventive",
+      "name": "Preventive Care",
+      "icon": "shield",
+      "color": "#f59e0b",
+      "tips": [
+        { "title": "Annual Health Checkups", "content": "Visit your doctor annually for preventive screenings, even when feeling healthy. Early detection saves lives.", "importance": "high" },
+        { "title": "Know Your Numbers", "content": "Track your blood pressure, cholesterol, blood sugar, and BMI. Understanding your baseline helps catch changes early.", "importance": "high" },
+        { "title": "Stay Up-to-Date on Vaccines", "content": "Follow recommended vaccination schedules. Vaccines prevent serious diseases including flu, COVID-19, shingles, and pneumonia.", "importance": "high" },
+        { "title": "Sunscreen Daily", "content": "Apply broad-spectrum SPF 30+ sunscreen daily, even on cloudy days. Reapply every 2 hours outdoors. Skin cancer is highly preventable.", "importance": "medium" },
+        { "title": "Dental Health", "content": "Brush twice daily, floss daily, and visit the dentist every 6 months. Poor dental health is linked to heart disease.", "importance": "medium" },
+        { "title": "Hand Hygiene", "content": "Wash hands for 20 seconds with soap and water regularly. It's the single most effective way to prevent infections.", "importance": "high" }
+      ]
+    }
+  ],
+  "dailyFacts": [
+    "Your brain uses about 20% of your body's total energy, despite being only 2% of your body weight.",
+    "The human heart beats approximately 100,000 times per day, pumping about 2,000 gallons of blood.",
+    "Your body produces about 25 million new cells each second. Every 13 seconds, you produce more cells than there are people in the US.",
+    "Laughing 100 times burns roughly the same number of calories as 10 minutes on a rowing machine.",
+    "The human nose can detect over 1 trillion different scents.",
+    "Your stomach gets a new lining every 3-4 days to prevent it from digesting itself.",
+    "Walking for just 30 minutes a day can reduce the risk of heart disease by 35-40%.",
+    "Human bones are 4 times stronger than concrete, ounce for ounce.",
+    "Your body contains enough iron to make a 3-inch nail.",
+    "The cornea is the only part of the body with no blood supply — it gets oxygen directly from the air.",
+    "A sneeze can travel at speeds up to 100 miles per hour.",
+    "Red blood cells make approximately 250,000 round trips through your body before returning to bone marrow to be recycled.",
+    "The average person walks the equivalent of 5 times around the Earth in their lifetime.",
+    "Your liver performs over 500 different functions, including filtering blood and producing bile.",
+    "Humans share about 60% of their DNA with bananas.",
+    "Exercise boosts the production of brain-derived neurotrophic factor (BDNF), which helps grow new brain cells.",
+    "Just 10 minutes of sun exposure can provide your daily vitamin D requirement.",
+    "Stress doesn't just affect your mood — it physically shrinks your brain's prefrontal cortex.",
+    "Drinking water before meals can help with weight loss by reducing calorie intake by 75 calories per meal.",
+    "The microbiome in your gut contains 39 trillion bacteria — more than the number of human cells in your body."
+  ],
+  "bmiData": {
+    "categories": [
+      { "range": [0, 18.5], "label": "Underweight", "color": "#3b82f6", "description": "BMI below 18.5 may indicate nutritional deficiency. Consult a healthcare provider." },
+      { "range": [18.5, 24.9], "label": "Normal Weight", "color": "#10b981", "description": "Healthy BMI range. Maintain with balanced diet and regular exercise." },
+      { "range": [25, 29.9], "label": "Overweight", "color": "#f59e0b", "description": "Increased health risk. Consider dietary changes and increased physical activity." },
+      { "range": [30, 34.9], "label": "Obese (Class I)", "color": "#f97316", "description": "Moderate health risk. Consult a healthcare provider for a management plan." },
+      { "range": [35, 39.9], "label": "Obese (Class II)", "color": "#ef4444", "description": "High health risk. Medical intervention recommended." },
+      { "range": [40, 100], "label": "Obese (Class III)", "color": "#dc2626", "description": "Very high health risk. Seek comprehensive medical care." }
+    ],
+    "formula": "BMI = weight(kg) / height(m)²",
+    "disclaimer": "BMI is a screening tool and does not directly measure body fat or health. Athletes, elderly, and pregnant women may have misleading BMI readings."
+  },
+  "hydrationGuide": {
+    "baseRecommendation": "8 glasses (2 liters / 64 oz) per day",
+    "adjustments": [
+      { "condition": "Exercise", "extra": "+500ml per 30 min of exercise" },
+      { "condition": "Hot weather", "extra": "+500-1000ml on hot days" },
+      { "condition": "Illness / Fever", "extra": "+500-1000ml when sick" },
+      { "condition": "Pregnancy", "extra": "+300ml daily" },
+      { "condition": "Breastfeeding", "extra": "+700ml daily" }
+    ],
+    "signs_of_dehydration": ["Dark yellow urine", "Dry mouth", "Headache", "Fatigue", "Dizziness", "Decreased urination"],
+    "tips": [
+      "Carry a water bottle everywhere",
+      "Set hourly hydration reminders",
+      "Eat water-rich foods (cucumber, watermelon, oranges)",
+      "Drink a glass of water first thing in the morning",
+      "Flavor water with lemon, mint, or berries for variety"
+    ]
+  }
+}

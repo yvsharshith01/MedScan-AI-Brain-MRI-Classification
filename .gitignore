@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Datasets & Large Archives
+archive (3)/
+archive*/
+*.zip
+*.tar.gz
+
+# Environment & IDE
+.env
+.vscode/
+.idea/
+.DS_Store

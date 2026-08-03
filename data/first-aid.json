@@ -1,0 +1,283 @@
+{
+  "scenarios": [
+    {
+      "id": "choking",
+      "name": "Choking",
+      "icon": "alert-circle",
+      "severity": "emergency",
+      "category": "airway",
+      "description": "When an object blocks the airway, preventing breathing.",
+      "callEmergency": true,
+      "steps": [
+        "Ask the person 'Are you choking?' — if they cannot speak, cough, or breathe, act immediately.",
+        "Stand behind the person and wrap your arms around their waist.",
+        "Make a fist with one hand and place it just above the navel, below the ribcage.",
+        "Grasp your fist with the other hand and give 5 quick, upward abdominal thrusts (Heimlich maneuver).",
+        "Repeat thrusts until the object is expelled or the person becomes unconscious.",
+        "If unconscious: Lower them to the ground, call 911, and begin CPR."
+      ],
+      "doNot": [
+        "Do NOT perform abdominal thrusts on infants under 1 year — use back blows and chest thrusts instead",
+        "Do NOT try to blindly sweep the mouth with your finger",
+        "Do NOT give water to someone who is actively choking"
+      ],
+      "forInfants": "For infants: 5 back blows (between shoulder blades) alternating with 5 chest thrusts (center of chest, just below nipple line)."
+    },
+    {
+      "id": "cpr",
+      "name": "CPR (Cardiac Arrest)",
+      "icon": "heart",
+      "severity": "emergency",
+      "category": "cardiac",
+      "description": "When someone's heart stops beating and they are unresponsive.",
+      "callEmergency": true,
+      "steps": [
+        "Check for responsiveness — tap shoulders and shout 'Are you OK?'",
+        "Call 911 immediately (or have someone call). Get an AED if available.",
+        "Place the person on their back on a firm, flat surface.",
+        "Place the heel of one hand on the center of the chest, other hand on top, fingers interlocked.",
+        "Push hard and fast — at least 2 inches deep, at a rate of 100-120 compressions per minute.",
+        "If trained: Give 2 rescue breaths after every 30 compressions (30:2 ratio).",
+        "If not trained in rescue breaths: Continue hands-only CPR without stopping.",
+        "Use an AED as soon as available — follow its voice prompts.",
+        "Continue CPR until emergency services arrive or the person shows signs of life."
+      ],
+      "doNot": [
+        "Do NOT stop compressions for more than 10 seconds",
+        "Do NOT be afraid of pushing too hard — broken ribs are better than death",
+        "Do NOT delay starting CPR to look for a pulse"
+      ],
+      "cprTiming": "Push to the beat of 'Stayin' Alive' by the Bee Gees (100-120 BPM)"
+    },
+    {
+      "id": "burns",
+      "name": "Burns",
+      "icon": "flame",
+      "severity": "moderate",
+      "category": "skin",
+      "description": "Tissue damage from heat, chemicals, electricity, or radiation.",
+      "callEmergency": false,
+      "steps": [
+        "Remove the person from the source of the burn.",
+        "Cool the burn immediately with cool (not cold/ice) running water for at least 10-20 minutes.",
+        "Remove jewelry, watches, or tight clothing near the burn before swelling occurs.",
+        "Cover the burn loosely with a sterile, non-stick bandage or clean cloth.",
+        "Take over-the-counter pain relievers (ibuprofen or acetaminophen).",
+        "For minor burns: Apply aloe vera gel or burn cream after cooling."
+      ],
+      "doNot": [
+        "Do NOT apply ice, butter, toothpaste, or home remedies to burns",
+        "Do NOT break blisters — they protect against infection",
+        "Do NOT remove clothing stuck to the burn",
+        "Do NOT use adhesive bandages directly on burns"
+      ],
+      "seekHelp": "Seek emergency care for: burns larger than 3 inches, burns on face/hands/feet/genitals, chemical or electrical burns, burns that appear white or charred (3rd degree)."
+    },
+    {
+      "id": "bleeding",
+      "name": "Severe Bleeding",
+      "icon": "droplet",
+      "severity": "emergency",
+      "category": "trauma",
+      "description": "Uncontrolled bleeding from a wound requiring immediate pressure.",
+      "callEmergency": true,
+      "steps": [
+        "Call 911 for severe or uncontrolled bleeding.",
+        "Wear gloves if available to protect yourself.",
+        "Apply firm, direct pressure to the wound using a clean cloth or bandage.",
+        "Maintain constant pressure — do NOT lift the cloth to check the wound.",
+        "If blood soaks through, add more cloth on top without removing the first layer.",
+        "If possible, elevate the injured area above the level of the heart.",
+        "If bleeding doesn't stop with direct pressure, apply a tourniquet (if trained) 2-3 inches above the wound.",
+        "Note the time the tourniquet was applied and tell emergency responders."
+      ],
+      "doNot": [
+        "Do NOT remove embedded objects from a wound — stabilize them in place",
+        "Do NOT apply a tourniquet unless direct pressure fails and the situation is life-threatening",
+        "Do NOT use a tourniquet on the neck or torso"
+      ]
+    },
+    {
+      "id": "fracture",
+      "name": "Fractures (Broken Bones)",
+      "icon": "git-branch",
+      "severity": "moderate",
+      "category": "trauma",
+      "description": "A break or crack in a bone, often from trauma or falls.",
+      "callEmergency": false,
+      "steps": [
+        "Keep the person still — do NOT try to move or realign the broken bone.",
+        "Immobilize the injured area using a splint or sling (use rolled newspaper, cardboard, etc.).",
+        "Apply ice wrapped in a towel to reduce swelling — 20 minutes on, 20 off.",
+        "For open fractures (bone visible): Cover the wound with a sterile bandage, do NOT push bone back in.",
+        "Monitor for signs of shock: pale skin, rapid breathing, confusion.",
+        "Get to an emergency room or call 911 for severe fractures."
+      ],
+      "doNot": [
+        "Do NOT try to straighten or push a bone back into place",
+        "Do NOT apply ice directly to skin",
+        "Do NOT let the person eat or drink (in case surgery is needed)",
+        "Do NOT move someone with a suspected spine or neck fracture"
+      ]
+    },
+    {
+      "id": "seizure",
+      "name": "Seizure",
+      "icon": "zap",
+      "severity": "emergency",
+      "category": "neurological",
+      "description": "Uncontrolled electrical disturbance in the brain causing convulsions.",
+      "callEmergency": true,
+      "steps": [
+        "Stay calm and note the time the seizure starts.",
+        "Clear the area of hard or sharp objects to prevent injury.",
+        "Gently guide the person to the ground if they are standing.",
+        "Place something soft under their head (folded jacket, pillow).",
+        "Turn them on their side (recovery position) to keep the airway clear.",
+        "Stay with the person until the seizure ends and they are fully conscious.",
+        "After the seizure: Speak calmly, help them sit up when ready."
+      ],
+      "doNot": [
+        "Do NOT hold the person down or restrain their movements",
+        "Do NOT put anything in their mouth — they cannot swallow their tongue",
+        "Do NOT give food, water, or medication until fully alert",
+        "Do NOT leave them alone"
+      ],
+      "seekHelp": "Call 911 if: seizure lasts more than 5 minutes, person doesn't regain consciousness, another seizure occurs, person is injured, or it's their first seizure."
+    },
+    {
+      "id": "allergic-reaction",
+      "name": "Severe Allergic Reaction (Anaphylaxis)",
+      "icon": "alert-triangle",
+      "severity": "emergency",
+      "category": "allergic",
+      "description": "Life-threatening allergic reaction causing airway swelling and shock.",
+      "callEmergency": true,
+      "steps": [
+        "Call 911 immediately — anaphylaxis can be fatal within minutes.",
+        "If the person has an epinephrine auto-injector (EpiPen), help them use it in the outer thigh.",
+        "Have the person lie down with legs elevated (unless they have breathing difficulty — let them sit up).",
+        "Loosen tight clothing and cover them with a blanket.",
+        "If breathing stops, begin CPR.",
+        "A second dose of epinephrine can be given after 5-15 minutes if symptoms don't improve.",
+        "Even if symptoms improve after epinephrine, still go to the ER — reactions can return."
+      ],
+      "doNot": [
+        "Do NOT give oral medication if the person is having trouble swallowing",
+        "Do NOT wait to see if symptoms improve before calling 911",
+        "Do NOT have the person stand or walk"
+      ]
+    },
+    {
+      "id": "heatstroke",
+      "name": "Heat Stroke",
+      "icon": "sun",
+      "severity": "emergency",
+      "category": "environmental",
+      "description": "Body temperature rises above 104°F (40°C) — a medical emergency.",
+      "callEmergency": true,
+      "steps": [
+        "Call 911 immediately — heat stroke is life-threatening.",
+        "Move the person to a cool, shaded area or air-conditioned room.",
+        "Remove excess clothing.",
+        "Cool the person rapidly: apply ice packs to neck, armpits, and groin.",
+        "If possible, immerse in cool water or use a cool water spray with fanning.",
+        "Monitor body temperature and continue cooling until it drops below 101°F.",
+        "If conscious, give small sips of cool water."
+      ],
+      "doNot": [
+        "Do NOT give aspirin or acetaminophen for heat stroke",
+        "Do NOT give fluids if the person is unconscious",
+        "Do NOT use ice-cold water immersion if elderly or has chronic illness"
+      ]
+    },
+    {
+      "id": "poisoning",
+      "name": "Poisoning / Overdose",
+      "icon": "alert-octagon",
+      "severity": "emergency",
+      "category": "toxicological",
+      "description": "Ingestion, inhalation, or exposure to a harmful substance.",
+      "callEmergency": true,
+      "steps": [
+        "Call Poison Control (1-800-222-1222 in US) or 911 immediately.",
+        "Try to identify the substance, amount, and time of exposure.",
+        "If the person is unconscious but breathing: place in recovery position.",
+        "If not breathing: begin CPR.",
+        "If poison is on the skin: remove contaminated clothing and rinse skin with water for 15-20 minutes.",
+        "If poison is in the eyes: rinse with clean water for 15-20 minutes.",
+        "Bring the container or substance to the hospital if possible."
+      ],
+      "doNot": [
+        "Do NOT induce vomiting unless told to by Poison Control",
+        "Do NOT give activated charcoal without medical guidance",
+        "Do NOT give the person anything to eat or drink unless directed by Poison Control"
+      ]
+    },
+    {
+      "id": "nosebleed",
+      "name": "Nosebleed",
+      "icon": "droplet",
+      "severity": "mild",
+      "category": "bleeding",
+      "description": "Bleeding from the nasal passages, usually from dry air or minor trauma.",
+      "callEmergency": false,
+      "steps": [
+        "Sit upright and lean slightly forward (not backward).",
+        "Pinch the soft part of the nose (just below the bony bridge) firmly.",
+        "Hold the pinch for at least 10-15 minutes without releasing to check.",
+        "Breathe through the mouth while pinching.",
+        "Apply a cold compress or ice pack to the bridge of the nose.",
+        "After bleeding stops, avoid blowing nose, bending over, or heavy lifting for several hours."
+      ],
+      "doNot": [
+        "Do NOT tilt the head backward — blood may flow into the throat",
+        "Do NOT stuff tissues or cotton deep into the nose",
+        "Do NOT pick or blow the nose after the bleeding stops"
+      ],
+      "seekHelp": "See a doctor if: nosebleed lasts more than 20 minutes, follows a head injury, occurs frequently, or involves large amounts of blood."
+    },
+    {
+      "id": "sprains",
+      "name": "Sprains & Strains",
+      "icon": "move",
+      "severity": "mild",
+      "category": "musculoskeletal",
+      "description": "Stretched or torn ligaments (sprain) or muscles/tendons (strain).",
+      "callEmergency": false,
+      "steps": [
+        "Follow R.I.C.E. protocol:",
+        "REST — Stop activity and avoid putting weight on the injured area.",
+        "ICE — Apply ice wrapped in a towel for 20 minutes every 2-3 hours for the first 48 hours.",
+        "COMPRESSION — Wrap the area with an elastic bandage (not too tight).",
+        "ELEVATION — Keep the injured area raised above heart level when possible.",
+        "Take over-the-counter pain relievers (ibuprofen) for pain and swelling.",
+        "After 48 hours, gentle range-of-motion exercises can begin."
+      ],
+      "doNot": [
+        "Do NOT apply ice directly to skin",
+        "Do NOT wrap too tightly — check for numbness or tingling",
+        "Do NOT ignore severe pain or inability to bear weight (may be a fracture)"
+      ]
+    }
+  ],
+  "categories": [
+    { "id": "cardiac", "name": "Heart & Circulation", "icon": "heart", "color": "#ef4444" },
+    { "id": "airway", "name": "Airway & Breathing", "icon": "wind", "color": "#3b82f6" },
+    { "id": "trauma", "name": "Injuries & Trauma", "icon": "alert-triangle", "color": "#f59e0b" },
+    { "id": "skin", "name": "Burns & Skin", "icon": "flame", "color": "#f97316" },
+    { "id": "allergic", "name": "Allergic Reactions", "icon": "shield", "color": "#8b5cf6" },
+    { "id": "neurological", "name": "Neurological", "icon": "zap", "color": "#6366f1" },
+    { "id": "environmental", "name": "Environmental", "icon": "sun", "color": "#eab308" },
+    { "id": "toxicological", "name": "Poisoning", "icon": "alert-octagon", "color": "#dc2626" },
+    { "id": "bleeding", "name": "Bleeding", "icon": "droplet", "color": "#e11d48" },
+    { "id": "musculoskeletal", "name": "Muscles & Bones", "icon": "move", "color": "#14b8a6" }
+  ],
+  "emergencyNumbers": {
+    "us": { "emergency": "911", "poison": "1-800-222-1222" },
+    "uk": { "emergency": "999", "nhs": "111" },
+    "eu": { "emergency": "112" },
+    "india": { "emergency": "112", "ambulance": "108" },
+    "australia": { "emergency": "000", "poison": "13 11 26" }
+  }
+}

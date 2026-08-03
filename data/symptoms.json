@@ -1,0 +1,252 @@
+{
+  "symptoms": [
+    {
+      "id": "headache",
+      "name": "Headache",
+      "icon": "brain",
+      "bodyRegion": "head",
+      "followUpQuestions": [
+        { "q": "How long have you had the headache?", "options": ["Less than 24 hours", "1-3 days", "More than a week", "Recurring over months"] },
+        { "q": "Where is the pain located?", "options": ["Front of head", "Back of head", "One side only", "All over", "Behind the eyes"] },
+        { "q": "How would you describe the pain?", "options": ["Throbbing", "Sharp/stabbing", "Dull/aching", "Pressure-like", "Burning"] },
+        { "q": "Any accompanying symptoms?", "options": ["Nausea/vomiting", "Sensitivity to light", "Blurred vision", "Neck stiffness", "Fever", "None"] }
+      ],
+      "conditions": [
+        { "name": "Tension Headache", "probability": 0.45, "severity": "mild", "description": "Most common type of headache. Often feels like a band of pressure around the head.", "action": "Rest, hydration, over-the-counter pain relievers" },
+        { "name": "Migraine", "probability": 0.25, "severity": "moderate", "description": "Intense, throbbing headache often on one side, may include aura, nausea, light sensitivity.", "action": "Rest in dark room, prescribed migraine medication" },
+        { "name": "Cluster Headache", "probability": 0.10, "severity": "severe", "description": "Extremely painful headaches occurring in clusters, usually around one eye.", "action": "Seek medical evaluation for proper diagnosis and treatment" },
+        { "name": "Sinusitis", "probability": 0.15, "severity": "mild", "description": "Headache caused by sinus inflammation, often with facial pressure and congestion.", "action": "Decongestants, nasal irrigation, see doctor if persistent" },
+        { "name": "Dehydration", "probability": 0.05, "severity": "mild", "description": "Headache from insufficient fluid intake.", "action": "Increase water intake, rest" }
+      ],
+      "emergencyTriggers": ["Sudden severe headache (thunderclap)", "Headache with fever and stiff neck", "Headache after head injury", "Headache with confusion or vision loss"]
+    },
+    {
+      "id": "chest-pain",
+      "name": "Chest Pain",
+      "icon": "heart",
+      "bodyRegion": "chest",
+      "followUpQuestions": [
+        { "q": "What type of pain are you feeling?", "options": ["Sharp/stabbing", "Pressure/squeezing", "Burning", "Aching", "Tightness"] },
+        { "q": "When does the pain occur?", "options": ["At rest", "During physical activity", "When breathing deeply", "After eating", "Randomly"] },
+        { "q": "Does the pain spread anywhere?", "options": ["Left arm", "Jaw", "Back", "Shoulder", "No spreading"] },
+        { "q": "Any other symptoms?", "options": ["Shortness of breath", "Sweating", "Nausea", "Dizziness", "Palpitations", "None"] }
+      ],
+      "conditions": [
+        { "name": "Musculoskeletal Pain", "probability": 0.30, "severity": "mild", "description": "Chest wall pain from muscle strain or costochondritis.", "action": "Rest, anti-inflammatory medication, warm compress" },
+        { "name": "GERD / Acid Reflux", "probability": 0.25, "severity": "mild", "description": "Burning chest pain from stomach acid flowing back into esophagus.", "action": "Antacids, dietary changes, avoid lying down after eating" },
+        { "name": "Anxiety / Panic Attack", "probability": 0.20, "severity": "moderate", "description": "Chest tightness and pain during anxiety or panic episodes.", "action": "Breathing exercises, stress management, consider counseling" },
+        { "name": "Angina", "probability": 0.15, "severity": "severe", "description": "Chest pain from reduced blood flow to the heart.", "action": "Seek immediate medical attention" },
+        { "name": "Pericarditis", "probability": 0.10, "severity": "moderate", "description": "Inflammation of the sac around the heart.", "action": "See a cardiologist for evaluation" }
+      ],
+      "emergencyTriggers": ["Crushing chest pressure with arm/jaw pain", "Chest pain with difficulty breathing", "Chest pain with loss of consciousness", "Sudden severe chest pain"]
+    },
+    {
+      "id": "fever",
+      "name": "Fever",
+      "icon": "thermometer",
+      "bodyRegion": "general",
+      "followUpQuestions": [
+        { "q": "What is your temperature?", "options": ["99-100°F (37.2-37.8°C)", "100-102°F (37.8-38.9°C)", "102-104°F (38.9-40°C)", "Above 104°F (40°C)", "Haven't measured"] },
+        { "q": "How long have you had fever?", "options": ["Less than 24 hours", "1-3 days", "4-7 days", "More than a week"] },
+        { "q": "Any accompanying symptoms?", "options": ["Cough", "Sore throat", "Body aches", "Rash", "Chills/sweating", "Headache", "None"] }
+      ],
+      "conditions": [
+        { "name": "Common Cold / Flu", "probability": 0.40, "severity": "mild", "description": "Viral infection causing fever, body aches, and respiratory symptoms.", "action": "Rest, fluids, over-the-counter fever reducers" },
+        { "name": "COVID-19", "probability": 0.15, "severity": "moderate", "description": "Respiratory illness that can cause fever, cough, and fatigue.", "action": "Get tested, isolate, monitor symptoms" },
+        { "name": "Bacterial Infection", "probability": 0.20, "severity": "moderate", "description": "Fever from bacterial source requiring potential antibiotic treatment.", "action": "See a doctor for proper diagnosis and antibiotics if needed" },
+        { "name": "Urinary Tract Infection", "probability": 0.15, "severity": "moderate", "description": "Infection in the urinary system causing fever and discomfort.", "action": "See a doctor for urine test and antibiotics" },
+        { "name": "Heat Exhaustion", "probability": 0.10, "severity": "moderate", "description": "Elevated body temperature from prolonged heat exposure.", "action": "Cool down, hydrate, rest in shade" }
+      ],
+      "emergencyTriggers": ["Fever above 104°F (40°C)", "Fever with severe headache and stiff neck", "Fever with rash that doesn't fade under pressure", "Fever in infant under 3 months"]
+    },
+    {
+      "id": "abdominal-pain",
+      "name": "Abdominal Pain",
+      "icon": "activity",
+      "bodyRegion": "abdomen",
+      "followUpQuestions": [
+        { "q": "Where exactly is the pain?", "options": ["Upper right", "Upper left", "Lower right", "Lower left", "Central/around navel", "All over"] },
+        { "q": "How would you describe the pain?", "options": ["Cramping", "Sharp/stabbing", "Burning", "Dull aching", "Bloating/pressure"] },
+        { "q": "When did it start?", "options": ["Just now (sudden)", "Few hours ago", "1-3 days ago", "Been ongoing for weeks"] },
+        { "q": "Related to eating?", "options": ["Worse after eating", "Better after eating", "No relation to food", "Worse when hungry"] }
+      ],
+      "conditions": [
+        { "name": "Indigestion / Gastritis", "probability": 0.30, "severity": "mild", "description": "Stomach discomfort from eating, stress, or mild inflammation.", "action": "Antacids, bland diet, avoid spicy/fatty foods" },
+        { "name": "Irritable Bowel Syndrome", "probability": 0.20, "severity": "mild", "description": "Chronic condition causing cramping, bloating, and altered bowel habits.", "action": "Dietary management, stress reduction, see a gastroenterologist" },
+        { "name": "Gastroenteritis", "probability": 0.20, "severity": "moderate", "description": "Viral or bacterial stomach infection (stomach flu).", "action": "Hydration, rest, BRAT diet, see doctor if symptoms persist" },
+        { "name": "Appendicitis", "probability": 0.15, "severity": "severe", "description": "Inflammation of the appendix, typically right lower abdomen.", "action": "Seek emergency medical care immediately" },
+        { "name": "Kidney Stones", "probability": 0.15, "severity": "severe", "description": "Intense pain from mineral deposits passing through urinary tract.", "action": "See a doctor, pain management, hydration" }
+      ],
+      "emergencyTriggers": ["Sudden severe abdominal pain", "Abdominal pain with bloody stool", "Abdominal pain with inability to pass gas or stool", "Abdominal pain with high fever and vomiting"]
+    },
+    {
+      "id": "cough",
+      "name": "Persistent Cough",
+      "icon": "wind",
+      "bodyRegion": "chest",
+      "followUpQuestions": [
+        { "q": "What type of cough?", "options": ["Dry cough", "Productive (with mucus)", "Barking", "Wheezing with cough"] },
+        { "q": "How long have you had it?", "options": ["Less than a week", "1-3 weeks", "More than 3 weeks", "Months"] },
+        { "q": "Color of mucus (if any)?", "options": ["Clear/white", "Yellow", "Green", "Brown/rusty", "Blood-tinged", "No mucus"] },
+        { "q": "Other symptoms?", "options": ["Runny nose", "Sore throat", "Shortness of breath", "Fever", "Chest tightness", "None"] }
+      ],
+      "conditions": [
+        { "name": "Upper Respiratory Infection", "probability": 0.35, "severity": "mild", "description": "Common cold or viral infection of the upper airways.", "action": "Rest, fluids, over-the-counter cold medications" },
+        { "name": "Bronchitis", "probability": 0.25, "severity": "moderate", "description": "Inflammation of the bronchial tubes, often follows a cold.", "action": "Rest, humidifier, see doctor if persistent" },
+        { "name": "Allergies / Postnasal Drip", "probability": 0.20, "severity": "mild", "description": "Cough triggered by allergens or mucus dripping down the throat.", "action": "Antihistamines, avoid triggers, nasal rinse" },
+        { "name": "Asthma", "probability": 0.10, "severity": "moderate", "description": "Chronic airway condition causing cough, wheezing, and breathlessness.", "action": "Inhaler, avoid triggers, see a pulmonologist" },
+        { "name": "Pneumonia", "probability": 0.10, "severity": "severe", "description": "Lung infection causing productive cough, fever, and chest pain.", "action": "See a doctor immediately for chest X-ray and antibiotics" }
+      ],
+      "emergencyTriggers": ["Coughing up blood", "Severe difficulty breathing", "Cough with high fever and chest pain", "Unable to catch breath"]
+    },
+    {
+      "id": "fatigue",
+      "name": "Fatigue / Tiredness",
+      "icon": "battery-low",
+      "bodyRegion": "general",
+      "followUpQuestions": [
+        { "q": "How long have you been fatigued?", "options": ["Few days", "1-2 weeks", "More than a month", "Ongoing for months"] },
+        { "q": "How is your sleep?", "options": ["Sleeping well but still tired", "Difficulty falling asleep", "Waking up frequently", "Sleeping too much", "Not getting enough sleep"] },
+        { "q": "Other symptoms?", "options": ["Weight change", "Mood changes", "Muscle weakness", "Hair loss", "Frequent infections", "None"] }
+      ],
+      "conditions": [
+        { "name": "Sleep Deficiency", "probability": 0.30, "severity": "mild", "description": "Not getting adequate quality or quantity of sleep.", "action": "Improve sleep hygiene, maintain consistent schedule" },
+        { "name": "Iron Deficiency Anemia", "probability": 0.20, "severity": "moderate", "description": "Low iron levels reducing oxygen-carrying capacity of blood.", "action": "Blood test, iron supplements, iron-rich diet" },
+        { "name": "Hypothyroidism", "probability": 0.15, "severity": "moderate", "description": "Underactive thyroid slowing metabolism and causing fatigue.", "action": "Thyroid blood test (TSH), thyroid medication if diagnosed" },
+        { "name": "Depression", "probability": 0.20, "severity": "moderate", "description": "Mental health condition that can manifest as persistent fatigue.", "action": "Talk to a mental health professional, consider counseling" },
+        { "name": "Vitamin D Deficiency", "probability": 0.15, "severity": "mild", "description": "Low vitamin D levels causing fatigue and muscle weakness.", "action": "Blood test, vitamin D supplements, sun exposure" }
+      ],
+      "emergencyTriggers": ["Extreme fatigue with chest pain", "Fatigue with unexplained weight loss", "Fatigue with high fever", "Sudden onset of extreme weakness"]
+    },
+    {
+      "id": "back-pain",
+      "name": "Back Pain",
+      "icon": "move",
+      "bodyRegion": "back",
+      "followUpQuestions": [
+        { "q": "Where is the pain?", "options": ["Upper back", "Mid back", "Lower back", "Entire back"] },
+        { "q": "What makes it worse?", "options": ["Sitting", "Standing", "Bending", "Lifting", "Walking", "Nothing specific"] },
+        { "q": "Does pain radiate?", "options": ["Down one leg (sciatica)", "Down both legs", "Into buttocks", "No radiation"] }
+      ],
+      "conditions": [
+        { "name": "Muscle Strain", "probability": 0.40, "severity": "mild", "description": "Overuse or injury to back muscles or ligaments.", "action": "Rest, ice/heat, gentle stretching, OTC pain relievers" },
+        { "name": "Herniated Disc", "probability": 0.20, "severity": "moderate", "description": "Disc material pressing on spinal nerves.", "action": "Physical therapy, pain management, see orthopedist" },
+        { "name": "Poor Posture", "probability": 0.20, "severity": "mild", "description": "Chronic pain from prolonged poor posture.", "action": "Ergonomic improvements, posture exercises, core strengthening" },
+        { "name": "Sciatica", "probability": 0.15, "severity": "moderate", "description": "Pain radiating along the sciatic nerve from lower back to leg.", "action": "Physical therapy, anti-inflammatories, see a doctor" },
+        { "name": "Spinal Stenosis", "probability": 0.05, "severity": "severe", "description": "Narrowing of the spinal canal pressing on nerves.", "action": "See a spine specialist for evaluation" }
+      ],
+      "emergencyTriggers": ["Back pain with loss of bladder/bowel control", "Severe pain after a fall or injury", "Back pain with numbness in legs", "Back pain with fever"]
+    },
+    {
+      "id": "joint-pain",
+      "name": "Joint Pain",
+      "icon": "git-branch",
+      "bodyRegion": "extremities",
+      "followUpQuestions": [
+        { "q": "Which joints are affected?", "options": ["Knees", "Hips", "Shoulders", "Hands/fingers", "Ankles", "Multiple joints"] },
+        { "q": "Is there swelling?", "options": ["Yes, significant", "Mild swelling", "No swelling"] },
+        { "q": "When is pain worst?", "options": ["Morning stiffness", "After activity", "All the time", "At night"] }
+      ],
+      "conditions": [
+        { "name": "Osteoarthritis", "probability": 0.35, "severity": "moderate", "description": "Degenerative joint disease from wear and tear of cartilage.", "action": "Exercise, weight management, anti-inflammatories, see rheumatologist" },
+        { "name": "Rheumatoid Arthritis", "probability": 0.15, "severity": "moderate", "description": "Autoimmune condition causing joint inflammation and pain.", "action": "See a rheumatologist for blood tests and treatment" },
+        { "name": "Gout", "probability": 0.15, "severity": "severe", "description": "Sudden intense joint pain from uric acid crystal buildup.", "action": "Anti-inflammatory medication, dietary changes, see doctor" },
+        { "name": "Tendinitis", "probability": 0.20, "severity": "mild", "description": "Inflammation of tendons from overuse.", "action": "Rest, ice, gentle stretching, avoid repetitive motions" },
+        { "name": "Bursitis", "probability": 0.15, "severity": "mild", "description": "Inflammation of fluid-filled sacs cushioning joints.", "action": "Rest, ice, anti-inflammatories" }
+      ],
+      "emergencyTriggers": ["Joint pain with high fever", "Sudden severe joint swelling and redness", "Joint pain after injury with inability to move", "Joint pain with skin rash"]
+    },
+    {
+      "id": "dizziness",
+      "name": "Dizziness / Vertigo",
+      "icon": "rotate-ccw",
+      "bodyRegion": "head",
+      "followUpQuestions": [
+        { "q": "What type of dizziness?", "options": ["Room spinning (vertigo)", "Lightheadedness", "Unsteadiness/imbalance", "Feeling faint"] },
+        { "q": "Triggers?", "options": ["Standing up quickly", "Turning head", "No trigger", "Stress/anxiety", "After eating"] },
+        { "q": "Other symptoms?", "options": ["Hearing loss", "Ringing in ears", "Nausea", "Headache", "Vision changes", "None"] }
+      ],
+      "conditions": [
+        { "name": "BPPV (Benign Positional Vertigo)", "probability": 0.30, "severity": "mild", "description": "Brief vertigo triggered by head position changes.", "action": "Epley maneuver, see ENT specialist" },
+        { "name": "Low Blood Pressure", "probability": 0.25, "severity": "mild", "description": "Dizziness when standing due to blood pressure drop.", "action": "Rise slowly, stay hydrated, increase salt intake" },
+        { "name": "Inner Ear Infection", "probability": 0.20, "severity": "moderate", "description": "Infection causing vertigo, hearing changes, and nausea.", "action": "See a doctor for antibiotics and vestibular therapy" },
+        { "name": "Dehydration", "probability": 0.15, "severity": "mild", "description": "Insufficient fluid intake causing lightheadedness.", "action": "Increase water intake, electrolytes" },
+        { "name": "Anemia", "probability": 0.10, "severity": "moderate", "description": "Low blood count causing dizziness and fatigue.", "action": "Blood test, iron supplements, dietary changes" }
+      ],
+      "emergencyTriggers": ["Dizziness with slurred speech", "Dizziness with facial drooping", "Dizziness with severe headache", "Dizziness with loss of consciousness"]
+    },
+    {
+      "id": "skin-rash",
+      "name": "Skin Rash",
+      "icon": "layers",
+      "bodyRegion": "skin",
+      "followUpQuestions": [
+        { "q": "What does the rash look like?", "options": ["Red and itchy", "Raised bumps/hives", "Blisters", "Dry/scaly patches", "Purple/dark spots", "Spreading ring"] },
+        { "q": "Where is it located?", "options": ["Face", "Arms/hands", "Torso", "Legs", "All over body", "Specific area"] },
+        { "q": "How long have you had it?", "options": ["Just appeared", "Few days", "Weeks", "Months"] },
+        { "q": "Any known triggers?", "options": ["New medication", "Food", "Contact with substance", "Stress", "Unknown"] }
+      ],
+      "conditions": [
+        { "name": "Contact Dermatitis", "probability": 0.30, "severity": "mild", "description": "Rash from skin contact with an irritant or allergen.", "action": "Avoid irritant, hydrocortisone cream, antihistamines" },
+        { "name": "Eczema", "probability": 0.25, "severity": "mild", "description": "Chronic condition causing dry, itchy, inflamed skin.", "action": "Moisturizers, topical steroids, avoid triggers" },
+        { "name": "Hives (Urticaria)", "probability": 0.20, "severity": "moderate", "description": "Raised, itchy welts from allergic reaction.", "action": "Antihistamines, identify and avoid allergen" },
+        { "name": "Fungal Infection", "probability": 0.15, "severity": "mild", "description": "Skin infection caused by fungi (ringworm, athlete's foot).", "action": "Antifungal cream, keep area dry" },
+        { "name": "Psoriasis", "probability": 0.10, "severity": "moderate", "description": "Autoimmune condition causing thick, scaly skin patches.", "action": "See a dermatologist for proper treatment plan" }
+      ],
+      "emergencyTriggers": ["Rash with difficulty breathing", "Rapidly spreading rash with fever", "Rash that doesn't blanch (meningitis sign)", "Severe blistering rash"]
+    },
+    {
+      "id": "shortness-of-breath",
+      "name": "Shortness of Breath",
+      "icon": "wind",
+      "bodyRegion": "chest",
+      "followUpQuestions": [
+        { "q": "When does it occur?", "options": ["At rest", "During mild activity", "During intense exercise", "When lying down", "Randomly"] },
+        { "q": "How quickly did it start?", "options": ["Sudden onset", "Gradual over days", "Gradual over weeks/months"] },
+        { "q": "Accompanying symptoms?", "options": ["Chest pain", "Wheezing", "Cough", "Swollen ankles", "Anxiety", "None"] }
+      ],
+      "conditions": [
+        { "name": "Asthma", "probability": 0.25, "severity": "moderate", "description": "Airway inflammation causing breathing difficulty and wheezing.", "action": "Use inhaler, avoid triggers, see pulmonologist" },
+        { "name": "Anxiety / Panic", "probability": 0.25, "severity": "mild", "description": "Breathing difficulty from anxiety or panic attacks.", "action": "Breathing exercises, relaxation techniques, counseling" },
+        { "name": "Respiratory Infection", "probability": 0.20, "severity": "moderate", "description": "Infection affecting the lungs or airways.", "action": "See a doctor, may need antibiotics or antivirals" },
+        { "name": "Heart Failure", "probability": 0.15, "severity": "severe", "description": "Heart unable to pump efficiently, fluid buildup in lungs.", "action": "Seek medical attention immediately" },
+        { "name": "COPD", "probability": 0.15, "severity": "severe", "description": "Chronic lung disease causing progressive breathing difficulty.", "action": "See a pulmonologist, inhaler therapy, avoid smoking" }
+      ],
+      "emergencyTriggers": ["Sudden severe shortness of breath", "Cannot speak in full sentences", "Lips or fingertips turning blue", "Shortness of breath with chest pain"]
+    },
+    {
+      "id": "sore-throat",
+      "name": "Sore Throat",
+      "icon": "mic",
+      "bodyRegion": "head",
+      "followUpQuestions": [
+        { "q": "Severity?", "options": ["Mild irritation", "Moderate pain when swallowing", "Severe pain", "Can barely swallow"] },
+        { "q": "Other symptoms?", "options": ["Fever", "Swollen glands", "White patches on throat", "Runny nose", "Cough", "Ear pain", "None"] },
+        { "q": "Duration?", "options": ["1-2 days", "3-5 days", "More than a week", "Recurring"] }
+      ],
+      "conditions": [
+        { "name": "Viral Pharyngitis", "probability": 0.40, "severity": "mild", "description": "Sore throat caused by a viral infection (common cold).", "action": "Rest, warm liquids, throat lozenges, salt water gargle" },
+        { "name": "Strep Throat", "probability": 0.25, "severity": "moderate", "description": "Bacterial infection causing severe sore throat and fever.", "action": "See a doctor for rapid strep test and antibiotics" },
+        { "name": "Tonsillitis", "probability": 0.15, "severity": "moderate", "description": "Inflammation of the tonsils, often with swelling and white spots.", "action": "See a doctor, may need antibiotics" },
+        { "name": "Allergies", "probability": 0.10, "severity": "mild", "description": "Throat irritation from postnasal drip due to allergies.", "action": "Antihistamines, nasal spray, avoid allergens" },
+        { "name": "Acid Reflux (LPR)", "probability": 0.10, "severity": "mild", "description": "Throat irritation from stomach acid reaching the throat.", "action": "Dietary changes, elevate head during sleep, antacids" }
+      ],
+      "emergencyTriggers": ["Unable to swallow or drooling", "Difficulty breathing with sore throat", "Severe swelling of throat/tongue", "Sore throat with high fever and rash"]
+    }
+  ],
+  "bodyRegions": [
+    { "id": "head", "name": "Head & Neck", "icon": "brain" },
+    { "id": "chest", "name": "Chest", "icon": "heart" },
+    { "id": "abdomen", "name": "Abdomen", "icon": "activity" },
+    { "id": "back", "name": "Back", "icon": "move" },
+    { "id": "extremities", "name": "Arms & Legs", "icon": "git-branch" },
+    { "id": "skin", "name": "Skin", "icon": "layers" },
+    { "id": "general", "name": "General / Whole Body", "icon": "user" }
+  ],
+  "severityLevels": {
+    "mild": { "color": "#10b981", "label": "Mild", "description": "Usually manageable at home with self-care" },
+    "moderate": { "color": "#f59e0b", "label": "Moderate", "description": "Consider seeing a healthcare provider" },
+    "severe": { "color": "#ef4444", "label": "Severe", "description": "Seek medical attention promptly" },
+    "emergency": { "color": "#dc2626", "label": "Emergency", "description": "Call emergency services immediately" }
+  }
+}

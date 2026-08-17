@@ -110,3 +110,10 @@ To train the Vision Transformer on custom MRI datasets, ensure images are struct
 
 ## 7. Academic Disclaimer
 This software is developed strictly for **educational, academic, and demonstration purposes**. It is not an FDA-approved medical device and must not be used for actual clinical diagnosis, patient triage, or pharmacological advice.
+
+## Running the Project Locally
+
+### 1. Create a virtual environment
+
+```bash
+py -m venv venv
